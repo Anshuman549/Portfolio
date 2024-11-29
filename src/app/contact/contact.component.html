@@ -1,0 +1,30 @@
+<h1 id="contact" style="display: flex; justify-content: center; font-size: 4rem;">Contact</h1>
+ <div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> nuasahi,nayapalli,Bhubaneswar</p>
+        <p><strong>Phone:</strong> +91-8480349118</p>
+        <p><strong>Email:</strong> anshumanbiswal549gmail.com</p>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+        <label for="name">Name:</label>
+        <input id="name" formControlName="name" type="text" required />
+
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" type="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" formControlName="message" required></textarea>
+
+        <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.css"> -->
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">AB</a>
+        <i #menuIcon class='bx bx-menu' id="menu-icon"></i>
+        <nav #navbar class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a routerLink="/admin" routerLinkActive="active" class="logo" id="logo2">Ultra <span>Code</span></a>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Anshuman Biswal</h1>
+            <h3><span class="text">Full Stack Developer</span></h3>
+            <p>Commited to learning and evolving my coding skills.
+                My journey? From "Hello World!" to "Hello, Multiverse!".
+            </p>
+            <a style="color: #141414;" href="/assets/Anshuman Biswal - Resume.pdf" download><button style="text-decoration: none;" class="btn">Download CV</button></a>
+        </div>
+        <div class="social-media-icon">
+            <a href="https://linkedin.com/in/anshuman-biswal-b3b079175/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/Anshuman549/" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.facebook.com/anshuman.biswal.3979" target="_blank"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://x.com/Anshuma34769438" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <div class="home-img">
+            <img src="https://avatars.githubusercontent.com/u/140790755?v=4" alt="My Image">
+        </div>
+    </section>
+
+
+
+
+    <div id="about" class="about-section">
+        <div class="left-content">
+          <div class="big-letter">About Us</div>
+          <div style="display:flex ; flex-direction: column; align-items: center;" class="small-letter">
+          <h3 style="color: white;">with a solid background in designing,</h3>
+          <h3 style="color: white;"> building, and deploying scalable</h3>
+          <h3 style="color: white;"> web applications from scratch.</h3>
+          <!-- <h3 style="color: white;">lorem ipsum doloe sit amet consectur.</h3> -->
+          <div class="container mt-7" style="text-align: center;" >
+            <button type="button" class="btn btn-primary custom-btn">Hover Me</button>
+          </div>
+          </div>
+          <!-- Add more content here if needed -->
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="glassmorphism-box" data-tilt data-tilt-max="25" data-tilt-glare>
+            <h3>Overview</h3>
+            <p style="color: white;">Our business has never been just about the technical results. From day one, it’s been about relationships.</p>
+          </div>
+      
+          <div class="glassmorphism-box" data-tilt data-tilt-max="25" data-tilt-glare>
+            <h3>Our Story</h3>
+            <p style="color: white;">Our business has never been just about the technical results. From day one, it’s been about relationships.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- skill section -->
+
+
+      <div id="skill" class="about-section">
+
+
+          <div class="col-lg-6">
+            <div style="padding: 50px;" class="glassmorphism-box" data-tilt data-tilt-max="25" data-tilt-glare>
+              <h3>Frontend</h3> 
+              <i class='bx bxl-html5'></i>
+              <i class='bx bxl-css3'></i>
+              <i class='bx bxl-javascript'></i>
+              <i class='bx bxl-angular'></i>
+              <i class='bx bxl-typescript'></i>
+              <i class='bx bxl-bootstrap'></i>
+              <h3>Backend</h3>
+              <i class='bx bxl-nodejs'></i>
+              <i class='bx bxl-php'></i>
+              <i class='bx bxl-java'></i>
+              <i class='bx bxl-spring-boot'></i>
+            </div>
+        
+            <div style="padding: 50px;" class="glassmorphism-box" data-tilt data-tilt-max="25" data-tilt-glare>
+              <h3>Databases</h3>
+              <i style="font-size: 20px; width: 60px;" class='bx bx-filetype-sql'>Mysql</i>
+              <h3>Api And Tools</h3>
+              <i style="font-size: 20px; width: 50px; text-align:center; position: relative; top: -10px;" class='bx bx-filetype-sql'>REST</i>
+              <i style="font-size: 20px; width: 70px; position: relative; top: -10px;" class='bx bx-filetype-sql'>Postman</i>
+              <i class='bx bxl-git'></i>
+              <i class='bx bxl-github'></i>
+              <i class='bx bxl-docker'></i>
+            </div>
+
+
+          <!-- Add more content here if needed -->
+        </div>
+
+
+        <div class="right-side-content">
+         <div class="big-letter">Skills</div>
+          <div style="display:flex ; flex-direction: column; align-items: center;" class="small-letter">
+              <h3 style="color: white;">with a solid background in designing,</h3>
+              <h3 style="color: white;"> building, and deploying scalable</h3>
+              <h3 style="color: white;"> web applications from scratch.</h3>
+          <div class="container mt-7" style="text-align: center;" >
+            <button type="button" class="btn btn-primary custom-btn">Hover Me</button>
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+<app-education></app-education>
+<app-projects></app-projects>
+<app-contact></app-contact>
+<app-footer></app-footer>
+
+
+
+    <!-- <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Anshuman <span>Biswal</span> | All rights reserved</p>
+        </div>
+    </footer> -->
+
+
+
+</body>

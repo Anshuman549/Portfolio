@@ -1,0 +1,9 @@
+<ng-container *ngIf="!isAdminRoute(); else adminContent">
+    <app-custcursor></app-custcursor>
+    <router-outlet></router-outlet>
+  </ng-container>
+  
+  <ng-template #adminContent>
+    <router-outlet></router-outlet>
+  </ng-template>
+  

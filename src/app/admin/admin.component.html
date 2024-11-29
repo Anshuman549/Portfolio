@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div *ngIf="!otpSent">
+    <form (ngSubmit)="sendOtp()" [formGroup]="loginForm">
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" required />
+  
+      <button type="submit" [disabled]="!loginForm.valid">Send OTP</button>
+    </form>
+  </div>
+  
+  <div *ngIf="otpSent && !isLoggedIn">
+    <form (ngSubmit)="verifyOtp()" [formGroup]="otpForm">
+      <label for="otp">Enter OTP:</label>
+      <input id="otp" formControlName="otp" type="text" required />
+  
+      <button type="submit" [disabled]="!otpForm.valid">Verify OTP</button>
+    </form>
+  </div>
+  
+  <div *ngIf="isLoggedIn">
+    <h2>Contact Form Data</h2>
+    <ul>
+      <li *ngFor="let contact of contacts">
+        <strong>{{ contact.name }}</strong> ({{ contact.email }}): {{ contact.message }}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
